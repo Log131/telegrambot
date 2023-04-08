@@ -3,7 +3,7 @@ import asyncio
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-token = '5162602636:AAHtUb-m25lZ18_fGdomamEo9XZekfASi8c'
+token = ''
 bot = Bot(token=token)
 
 dp = Dispatcher(bot=bot)
@@ -99,7 +99,7 @@ async def video_(css: types.CallbackQuery):
     await css.message.delete()
     await css.message.answer('https://www.youtube.com/watch?v=bqtVKRyAvXI')
 
-    await asyncio.sleep(5)
+    await asyncio.sleep(90)
 
     age = 'https://i.yapx.ru/V3I0z.png'
     
@@ -112,34 +112,34 @@ async def video_(css: types.CallbackQuery):
     podrya_ = 'https://i.yapx.ru/V3K6X.png'
     podrya = 'https://i.yapx.ru/V3I9A.png'
     while task_state_:
-        await asyncio.sleep(5)
+        await asyncio.sleep(3500)
         if task_state_:
             await css.message.answer_photo(photo=age, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_())
-            await asyncio.sleep(5)
+            await asyncio.sleep(3500)
             if task_state_:
                 await css.message.answer_photo(photo=wed_, caption='Сам себе организатор: как создать свадьбу мечты и не переплатить', reply_markup=task_0())
-                await asyncio.sleep(5)
+                await asyncio.sleep(3500)
                 if task_state_:
                     await css.message.answer_photo(photo=wed_, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте видео', reply_markup=task_0())
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(3500)
                     if task_state_:
                         await css.message.answer_photo(photo=wed, caption='*У вас всего одна попытка, ошибки в организации не допустимы !!!* \n \n Как создать свадьбу мечты и не перепалить, забирайте пошаговую инструкцию!', reply_markup=task_5(), parse_mode='Markdown')
-                        await asyncio.sleep(5)
+                        await asyncio.sleep(3500)
                         if task_state_:
                             await css.message.answer_photo(photo=wed, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_5())
-                            await asyncio.sleep(5)
+                            await asyncio.sleep(3500)
                             if task_state_:
                                 await css.message.answer_photo(photo=podrya_, caption='Сам себе организатор: как сэкономить на свадьбе, с помощью одной фразы', reply_markup=task_6())
-                                await asyncio.sleep(5)
+                                await asyncio.sleep(3500)
                                 if task_state_:
                                     await css.message.answer_photo(photo=podrya_, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте видео ', reply_markup=task_6())
-                                    await asyncio.sleep(5)
+                                    await asyncio.sleep(3500)
                                     if task_state_:
                                         await css.message.answer_photo(photo=podrya, caption='Здесь вы узнаете: \n где найти всех подрядчиков и площадки быстро, просто и за любой бюджет!', reply_markup=task_8())
-                                        await asyncio.sleep(5)
+                                        await asyncio.sleep(3500)
                                         if task_state_:
                                             await css.message.answer_photo(photo=podrya, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_8())
-                                            await asyncio.sleep(5)
+                                            await asyncio.sleep(3500)
                                             task_state_ = False
                                             break
         else:
@@ -169,7 +169,7 @@ async def posts_0(css: types.CallbackQuery):
     age = 'https://i.yapx.ru/V3I0z.png'
     await css.message.answer_photo(photo=age,caption='Ссылка на статью', reply_markup=post_0())
     
-    await asyncio.sleep(5)
+    await asyncio.sleep(90)
     wed_ = 'https://i.yapx.ru/V3K4w.png'
     await css.message.answer_photo(photo=wed_, caption='Сам себе организатор: как создать свадьбу мечты и не переплатить', reply_markup=task_0())
     wed = 'https://i.yapx.ru/V3I3J.png'
@@ -177,28 +177,28 @@ async def posts_0(css: types.CallbackQuery):
     podrya = 'https://i.yapx.ru/V3I9A.png'
     task_state_0 = True
     while task_state_0:
-        await asyncio.sleep(5)
+        await asyncio.sleep(3500)
         if task_state_0:
             await css.message.answer_photo(photo=wed_, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте видео', reply_markup=task_0())
-            await asyncio.sleep(5)
+            await asyncio.sleep(3500)
             if task_state_0:
                 await css.message.answer_photo(photo=wed, caption='*У вас всего одна попытка, ошибки в организации не допустимы !!!* \n \n Как создать свадьбу мечты и не перепалить, забирайте пошаговую инструкцию!', reply_markup=task_5(), parse_mode='Markdown')
-                await asyncio.sleep(5)
+                await asyncio.sleep(3500)
                 if task_state_0:
                     await css.message.answer_photo(photo=wed, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_5())
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(3500)
                     if task_state_0:
                         await css.message.answer_photo(photo=podrya_, caption='Сам себе организатор: как сэкономить на свадьбе, с помощью одной фразы', reply_markup=task_6())
-                        await asyncio.sleep(5)
+                        await asyncio.sleep(3500)
                         if task_state_0:
                             await css.message.answer_photo(photo=podrya_, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте видео ', reply_markup=task_6())
-                            await asyncio.sleep(5)
+                            await asyncio.sleep(3500)
                             if task_state_0:
                                 await css.message.answer_photo(photo=podrya, caption='Здесь вы узнаете: \n где найти всех подрядчиков и площадки быстро, просто и за любой бюджет!', reply_markup=task_8())
-                                await asyncio.sleep(5)
+                                await asyncio.sleep(3500)
                                 if task_state_0:
                                     await css.message.answer_photo(photo=podrya, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_8())
-                                    await asyncio.sleep(5)
+                                    await asyncio.sleep(3500)
                                     task_state_0 = False
                                     break
         else:
@@ -218,7 +218,7 @@ async def video_5(css: types.CallbackQuery):
     await css.message.delete()
     
     await css.message.answer('https://www.youtube.com/watch?v=XvQDNVu4vn0')
-    await asyncio.sleep(5)
+    await asyncio.sleep(90)
     
     wed = 'https://i.yapx.ru/V3I3J.png'
     
@@ -230,22 +230,22 @@ async def video_5(css: types.CallbackQuery):
     podrya = 'https://i.yapx.ru/V3I9A.png'
     task_state_5 = True
     while task_state_5:
-        await asyncio.sleep(5)
+        await asyncio.sleep(3500)
         if task_state_5:
             await css.message.answer_photo(photo=wed, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_5())
-            await asyncio.sleep(5)
+            await asyncio.sleep(3500)
             if task_state_5:
                 await css.message.answer_photo(photo=podrya_, caption='Сам себе организатор: как сэкономить на свадьбе, с помощью одной фразы', reply_markup=task_6())
-                await asyncio.sleep(5)
+                await asyncio.sleep(3500)
                 if task_state_5:
                     await css.message.answer_photo(photo=podrya_, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте видео ', reply_markup=task_6())
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(3500)
                     if task_state_5:
                         await css.message.answer_photo(photo=podrya, caption='Здесь вы узнаете: \n где найти всех подрядчиков и площадки быстро, просто и за любой бюджет!', reply_markup=task_8())
-                        await asyncio.sleep(5)
+                        await asyncio.sleep(3500)
                         if task_state_5:
                             await css.message.answer_photo(photo=podrya, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_8())
-                            await asyncio.sleep(5)
+                            await asyncio.sleep(3500)
                             task_state_5 = False
                             break
         else:
@@ -268,7 +268,7 @@ async def posts_6(css: types.CallbackQuery):
     await css.message.answer_photo(photo=wed,caption='Ссылка на статью', reply_markup=post_())
     
     
-    await asyncio.sleep(5)
+    await asyncio.sleep(90)
     podrya_ = 'https://i.yapx.ru/V3K6X.png'
     await css.message.answer_photo(photo=podrya_, caption='Сам себе организатор: как сэкономить на свадьбе, с помощью одной фразы', reply_markup=task_6())
     
@@ -277,16 +277,16 @@ async def posts_6(css: types.CallbackQuery):
     task_state_6 = True
     podrya = 'https://i.yapx.ru/V3I9A.png'
     while task_state_6:
-        await asyncio.sleep(5)
+        await asyncio.sleep(3500)
         if task_state_6:
             await css.message.answer_photo(photo=podrya_, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте видео ', reply_markup=task_6())
-            await asyncio.sleep(5)
+            await asyncio.sleep(3500)
             if task_state_6:
                 await css.message.answer_photo(photo=podrya, caption='Здесь вы узнаете: \n где найти всех подрядчиков и площадки быстро, просто и за любой бюджет!', reply_markup=task_8())
-                await asyncio.sleep(5)
+                await asyncio.sleep(3500)
                 if task_state_6:
                     await css.message.answer_photo(photo=podrya, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_8())
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(3500)
                     task_state_6 = False
                     break
         else:
@@ -304,7 +304,7 @@ async def video_0(css: types.CallbackQuery):
     await css.message.delete()
     await css.message.answer('https://www.youtube.com/watch?v=ErXYpHWUxrc')
     
-    await asyncio.sleep(5)
+    await asyncio.sleep(90)
     podrya = 'https://i.yapx.ru/V3I9A.png'
 
     await css.message.answer_photo(photo=podrya, caption='Здесь вы узнаете: \n где найти всех подрядчиков и площадки быстро, просто и за любой бюджет!', reply_markup=task_8())
@@ -314,9 +314,9 @@ async def video_0(css: types.CallbackQuery):
     
     task_state_8 = True
     while task_state_8:
-        await asyncio.sleep(5)
+        await asyncio.sleep(3500)
         if task_state_8:
-            await asyncio.sleep(5)
+            await asyncio.sleep(3500)
             await css.message.answer_photo(photo=podrya, caption='Вы где ? \n Время и идет, ваше событие все ближе \n Открывайте статью', reply_markup=task_8())
             task_state_8 = False
             break
