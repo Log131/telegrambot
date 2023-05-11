@@ -2,10 +2,11 @@ from aiogram import Dispatcher,Bot,executor,types
 
 from aiogram.dispatcher.middlewares import LifetimeControllerMiddleware
 
-
+import asyncio
 import sqlite3
+from datetime import datetime, time
 
-token = '5984947658:AAFEJNgy0rXV8FxfVRsV7uvcgS8Co1Mi24w'
+token = '6093970106:AAFugNzYa1SL0WTgReF4gHznIwqAF6tSRSY'
 
 bot = Bot(token=token)
 dp = Dispatcher(bot=bot)
@@ -66,9 +67,6 @@ async def warxd_(msg: types.Message):
 
 
 
-@dp.message_handler(commands=['card'])
-async def payments_(msg: types.Message):
-    await msg.answer(f'_Реквизиты Отзывничка_ : \n 🏦 Тинькофф Банк \n 💳 5536914054972405 \n \n 🏦 Сбербанк \n 💳 2202203293150142 \n \n 📲 +79106265792 (Для переводов по номеру, актуальны только те банки, которые указаны выше ☝️ )\n \n 🤖 💳Савушкин С.В.', parse_mode='Markdown')
 
 
 @dp.message_handler(commands=['del'])
@@ -91,6 +89,30 @@ async def delxd_(msg: types.Message):
 
 
 
+
+
+async def sends_():
+
+    time_now = datetime.now().time()
+    time_ = time(hour=10, minute=0)
+    if time_now >= time_:
+        await bot.send_message(chat_id='@GenialniyOtzivnikWork', text='🌟Друзья! \n \n Напоминаем, что в СУТКИ можно писать ТОЛЬКО 1 ОТЗЫВ на каждой площадке. \n \n Увы, но если написать БОЛЕЕ ОДНОГО ОТЗЫВА, то велик шанс его удаления, а следовательно, и блокировка вашего аккаунта. \n \n Спасибо за понимание!')
+
+
+
+
+
+async def starts_():
+    while True:
+        await sends_()
+        await asyncio.sleep(35)
+
+
+
+
+
+
 if __name__ == '__main__':
-   
+    s = asyncio.get_event_loop()
+    s.create_task(starts_())
     executor.start_polling(dp, skip_updates=True)
